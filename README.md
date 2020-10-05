@@ -26,6 +26,6 @@ To begin Contributing to this project follow these commands.
 ## FAQ
 
 
-## Credits
-mshriver2  
+## Credits 
 sd31117
+mshriver2

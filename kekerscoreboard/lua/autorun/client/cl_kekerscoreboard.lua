@@ -32,19 +32,12 @@ local function ToggleSC(toggle)
         KekerScoreboard:ShowCloseButton(false)
         KekerScoreboard:SetDraggable(false)
         KekerScoreboard.Paint = function(self,w,h)
-            local logoW = KekerScoreboard:GetWide() * .3
+            local logoW = KekerScoreboard:GetWide() * .2
             local logoH = KekerScoreboard:GetTall() * .05
-            local logo = vgui.Create("HTML", KekerScoreboard)
+            local logo = vgui.Create("DImage", KekerScoreboard)
             logo:SetSize(logoW, logoH)
             logo:SetPos(KekerScoreboard:GetWide() / 2 - logoW / 2, 5)
-            --[[for _, directory in pairs( file.Find("keker/*", "DATA") ) do
-                if (directory != nil) then
-                    logo:SetImage(directory)
-                else
-                    print("error")
-                end
-            end]]
-            logo:OpenURL("https://www.watchprizes.com/assets/gmod-img/keker-gmod2.gif")
+            logo:SetImage("download/materials/keker/keker.png")
             surface.SetDrawColor(255, 0, 0, 225)
             surface.DrawRect(0, 0, w, h)
             draw.SimpleText("GMod Network | "..engine.ActiveGamemode().." | "..game.GetMap(), "Keker14", w / 2, h * .07, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
