@@ -38,9 +38,9 @@ local function ToggleSC(toggle)
             logo:SetSize(logoW, logoH)
             logo:SetPos(KekerScoreboard:GetWide() / 2 - logoW / 2, 5)
             logo:SetImage("download/materials/keker/keker.png")
-            surface.SetDrawColor(255, 0, 0, 225)
+            surface.SetDrawColor(220, 220, 220, 225)
             surface.DrawRect(0, 0, w, h)
-            draw.SimpleText("GMod Network | "..engine.ActiveGamemode().." | "..game.GetMap(), "Keker14", w / 2, h * .07, color_white, TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
+            draw.SimpleText("GMod Network | "..engine.ActiveGamemode().." | "..game.GetMap(), "Keker14", w / 2, h * .07, Color(0, 0, 0, 225), TEXT_ALIGN_CENTER, TEXT_ALIGN_CENTER)
         end
 
         local scroll = vgui.Create("DScrollPanel", KekerScoreboard)
